@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="pg5.css"?>
+
+<STUDENTDATA>
+
+ <STUDENT>
+  <USN>USN   : 4VV18CS420</USN>
+  <NAME>NAME : SHRADDHA M</NAME>
+  <COLLEGE>COLLEGE : VVCE</COLLEGE>
+  <BRANCH>BRANCH :CSE</BRANCH>
+  <YEAR>YEAR : 2020</YEAR>
+  <EMAIL>E-MAIL : shraddhakunchi@gmail.com</EMAIL>
+ </STUDENT>
+
+ <STUDENT>
+  <USN>USN : 4VV17CS078</USN>
+  <NAME>NAME : S SAHANA</NAME>
+  <COLLEGE>COLLEGE : VVCE</COLLEGE>
+  <BRANCH>BRANCH :CSE</BRANCH>
+  <YEAR>YEAR : 2020</YEAR>
+  <EMAIL>E-MAIL : sahanamurthy11@gmail.com</EMAIL>
+ </STUDENT>
+
+ <STUDENT>
+  <USN>USN   : 4VV18CS413</USN>
+  <NAME>NAME : PHALGUNI M P</NAME>
+  <COLLEGE>COLLEGE : VVCE</COLLEGE>
+  <BRANCH>BRANCH :CSE</BRANCH>
+  <YEAR>YEAR : 2020</YEAR>
+  <EMAIL>E-MAIL : phalguni.0599@gmail.com</EMAIL>
+ </STUDENT>
+ 
+</STUDENTDATA>
+
+
+
