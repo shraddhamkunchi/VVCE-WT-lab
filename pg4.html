@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+<input type="text" id="str" placeholder="Enter a string/number">
+<input type="submit" onclick="run();" name="sub" value="Submit">
+<div id="result"></div>
+<script>
+	function run()
+	{
+		var str=document.getElementById("str").value;
+		if(Number.isInteger(parseInt(str)))
+		{
+			var num=parseInt(str);
+			var rem=0,rev=0;
+			while(num>0)
+			{
+			rem=parseInt(num%10);
+			rev=rev*10+rem;
+			num=parseInt(num/10);
+			}
+			document.getElementById("result").innerHTML="<p>Reverse is : </p>" +rev;
+		}
+		else
+		{
+			for(var i=0;i<str.length;i++)
+			{//a,e,i,o,u,A,E,I,O,U
+				if(str.charAt(i)=='a' || str.charAt(i)=='e' || str.charAt(i)=='i' || str.charAt(i)=='o' || str.charAt(i)=='u' || str.charAt(i)=='A' || str.charAt(i)=='E' || str.charAt(i)=='I' || str.charAt(i)=='O' || str.charAt(i)=='U')
+				{
+					var pos=i+1;
+					var text="The position of left most vowel is at "+pos;
+					document.getElementById("result").innerHTML=text;
+					exit;
+				}
+			}
+			var text="No vowel found";
+			document.getElementById("result").innerHTML=text;
+		}
+	}
+</script>
+</body>
+</html>

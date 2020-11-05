@@ -1,0 +1,42 @@
+<html>
+<head>
+<title> Program 3 JavaScript - Grow & shrink Text</title>
+<script>
+var ft=0,load;
+	function run()
+	{
+		load=window.setInterval("inc()",100);
+		
+	}
+	function inc()
+	{
+		ft=ft+1;
+		display.innerHTML="I'm increasing @ , ft:"+ft +"size";
+		display.style.fontSize= ft+"pt";
+		display.style.color="red";
+		if(ft>49){
+		window.clearTimeout(load);
+		load=window.setInterval("dec()",100);
+		}
+	}
+	function dec()
+	{
+		ft=ft-1;
+		display.innerHTML="I'm shrinking @ , ft:"+ft +"size";
+		display.style.fontSize= ft+"pt";
+		display.style.color="blue";
+		if(ft==5){
+		window.clearTimeout(load);
+		load=window.setInterval("inc()",100);
+		}
+	}
+</script>
+</head>
+<body onload="run()">
+	<center>
+	<p id="display"></p>
+	<input type="button" value="increase" onclick="inc()" />
+	<input type="button" value="decrease" onclick="dec()" />
+	</center>
+</body>
+</html>
